@@ -1,0 +1,10 @@
+C:\Users\cy\paddle_deploy\paddle_csharp_demo\paddle_cshap_demo\paddle_cshap_demo\bin\Debug\paddle_cshap_demo.exe.config
+C:\Users\cy\paddle_deploy\paddle_csharp_demo\paddle_cshap_demo\paddle_cshap_demo\bin\Debug\paddle_cshap_demo.exe
+C:\Users\cy\paddle_deploy\paddle_csharp_demo\paddle_cshap_demo\paddle_cshap_demo\bin\Debug\paddle_cshap_demo.pdb
+C:\Users\cy\paddle_deploy\paddle_csharp_demo\paddle_cshap_demo\paddle_cshap_demo\obj\Debug\paddle_cshap_demo.csproj.AssemblyReference.cache
+C:\Users\cy\paddle_deploy\paddle_csharp_demo\paddle_cshap_demo\paddle_cshap_demo\obj\Debug\paddle_cshap_demo.Form1.resources
+C:\Users\cy\paddle_deploy\paddle_csharp_demo\paddle_cshap_demo\paddle_cshap_demo\obj\Debug\paddle_cshap_demo.Properties.Resources.resources
+C:\Users\cy\paddle_deploy\paddle_csharp_demo\paddle_cshap_demo\paddle_cshap_demo\obj\Debug\paddle_cshap_demo.csproj.GenerateResource.cache
+C:\Users\cy\paddle_deploy\paddle_csharp_demo\paddle_cshap_demo\paddle_cshap_demo\obj\Debug\paddle_cshap_demo.csproj.CoreCompileInputs.cache
+C:\Users\cy\paddle_deploy\paddle_csharp_demo\paddle_cshap_demo\paddle_cshap_demo\obj\Debug\paddle_cshap_demo.exe
+C:\Users\cy\paddle_deploy\paddle_csharp_demo\paddle_cshap_demo\paddle_cshap_demo\obj\Debug\paddle_cshap_demo.pdb
