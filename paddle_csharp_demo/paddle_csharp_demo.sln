@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "paddle_cshap_demo", "paddle_cshap_demo\paddle_cshap_demo.csproj", "{5145D468-8C6C-4C54-B1A9-306E758BEF7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "paddle_csharp_demo", "paddle_csharp_demo\paddle_csharp_demo.csproj", "{5145D468-8C6C-4C54-B1A9-306E758BEF7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

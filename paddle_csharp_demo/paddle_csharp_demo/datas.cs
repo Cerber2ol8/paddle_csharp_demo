@@ -7,8 +7,9 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using OpenCvSharp;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
-namespace ModelInferUI
+namespace paddle_cshap_demo
 {
     public class BaseNotifyObj : INotifyPropertyChanged
     {
@@ -18,9 +19,41 @@ namespace ModelInferUI
             PropertyChangedEventHandler handler = PropertyChanged;
             handler?.Invoke(this, new PropertyChangedEventArgs(name));
         }
+
     }
 
-    public class MetaInformation : BaseNotifyObj
+    //Winfrom不能像WPF那样保证UI操作的线程安全，需要自己手动实现
+    //usage:
+    //public string Property { get { return property; } set { property = value; OnPropertyChanged(); } }
+    public abstract class BindingBase : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void SetValue<T>(ref T old, T value,
+            [CallerMemberName] string propertyName = null)
+        {
+            if ((old == null && value != null) || (old != null && !old.Equals(value)))
+            {
+                old = value;
+                if (Application.OpenForms.Count == 0) return;
+                Application.OpenForms[0]?.Invoke(new Action(() =>
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
+                }));
+            }
+        }
+        protected void OnPropertyChanged([CallerMemberName] string name = null)
+        {
+            if (Application.OpenForms.Count == 0) return;
+            Application.OpenForms[0]?.Invoke(new Action(() =>
+            {
+                PropertyChanged.Invoke(this, new PropertyChangedEventArgs(name));
+            }));
+
+        }
+
+    }
+
+    public class MetaInformation : BindingBase
     {
         // 日志信息
         private string log;

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 
 
-namespace ModelInferUI
+namespace paddle_cshap_demo
 {
     public class ImageHelper
     {

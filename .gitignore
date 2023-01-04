@@ -1,2 +1,5 @@
 paddle_csharp_demo/paddle_csharp_demo/bin
 paddle_csharp_demo/packages
+paddle_csharp_demo/paddle_csharp_demo/obj
+paddle_csharp_demo/paddle_csharp_demo/libs/libs_gpu
+
